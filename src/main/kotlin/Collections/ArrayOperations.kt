@@ -14,4 +14,13 @@ fun main () {
 
     val retorno = salarios.filter{ it > 2500.0 }
     retorno.forEach { (println(it)) }
+
+    println(salarios.count{ it in 2000.0.. 6000.0})
+
+    println(salarios.find{ it == 6000.0})
+    println(salarios.find{ it == 0.0})
+
+    println(salarios.any{ it == 1000.0})
+
+
 }
